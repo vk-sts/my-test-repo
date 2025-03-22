@@ -36,7 +36,7 @@ jobs:
       with:
         app-id: ${{ secrets.TOKEN_APP_ID }}
         private-key: ${{ secrets.TOKEN_APP_CERT }}
-        repositories: ${{ github.repository_owner }}/source-02
+        repositories: source-02
     
     - uses: actions/checkout@v4
       name: Checkout via App token
