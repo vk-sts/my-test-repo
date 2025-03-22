@@ -20,3 +20,8 @@ jobs:
         scope: ${{ github.repository_owner }}/github-sts-policies
         identity: my-test-repo-ghaudit
 
+    - uses: actions/checkout@v4
+      with:
+        token:  ${{ steps.octo-sts.outputs.token }}
+        repository: ${{ github.repository_owner }}/source
+
