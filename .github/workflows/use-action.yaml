@@ -20,5 +20,3 @@ jobs:
         scope: ${{ github.repository_owner }}
         identity: ghaudit
 
-
-}
