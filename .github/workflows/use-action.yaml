@@ -17,7 +17,7 @@ jobs:
     - uses: octo-sts/action@6177b4481c00308b3839969c3eca88c96a91775f # v1.0.0
       id: octo-sts
       with:
-        scope: ${{ github.repository_owner }}/github-sts-policies
+        scope: ${{ github.repository_owner }}
         identity: my-test-repo-ghaudit
 
     - uses: actions/checkout@v4
