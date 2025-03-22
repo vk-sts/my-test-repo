@@ -25,10 +25,10 @@ jobs:
         token:  ${{ steps.octo-sts.outputs.token }}
         repository: ${{ github.repository_owner }}/source
 
-    - uses: actions/checkout@v4
-      with:
-        token:  ${{ steps.octo-sts.outputs.token }}
-        repository: ${{ github.repository_owner }}/source-02
+    # - uses: actions/checkout@v4
+    #   with:
+    #     token:  ${{ steps.octo-sts.outputs.token }}
+    #     repository: ${{ github.repository_owner }}/source-02
 
     - uses: actions/create-github-app-token@v1
       id: app-token
